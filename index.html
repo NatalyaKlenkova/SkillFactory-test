@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python среди других языков программирования</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section class="article">
+        <div class="container article__container">
+            <h1 class="article__title">
+                Юнит 10. Python среди других языков программирования
+            </h1>
+            <p class="article__descr preamble">
+                В&nbsp;этом юните мы&nbsp;приступим к&nbsp;изучению языка программирования Python:
+            </p>
+            <ul class="article__list highlighted">
+                <li class="article__item">
+                    разберём основные понятия из&nbsp;мира языков программирования (ЯП);
+                </li>
+                <li class="article__item">
+                    рассмотрим классификацию&nbsp;ЯП;
+                </li>
+                <li class="article__item">
+                    на&nbsp;основе этой классификации поймём, чем Python отличается от&nbsp;других языков
+                    программирования и&nbsp;в&nbsp;чём он&nbsp;схож с&nbsp;ними.
+                </li>
+            </ul>
+            <!-- <h2 class="article__subtitle">
+                
+            </h2> -->
+            <p class="article__descr">
+                <b>Python</b>&nbsp;&mdash; это высокоуровневый интерпретируемый кроссплатформенный язык
+                программирования.
+            </p>
+            <p class="article__descr">
+                Много незнакомых слов? Ниже мы&nbsp;шаг за&nbsp;шагом разберем все эти понятия, чтобы вы&nbsp;точно были
+                уверены, что они означают.
+            </p>
+            <p class="article__descr">
+                Почему это важно знать? Кто-то из&nbsp;вас уже знает основы программирования и&nbsp;ему требуется
+                освежить знания, а&nbsp;кто-то только начинает свой путь и&nbsp;знакомится с&nbsp;этими понятиями
+                впервые. Эта информация понадобится вам при дальнейшем прохождении курса и&nbsp;в&nbsp;работе,
+                а&nbsp;также поможет повысить общую эрудицию в&nbsp;программировании.
+            </p>
+            <p class="article__descr">
+                Начнём с&nbsp;определения языка программирования:
+            </p>
+            <p class="article__descr highlighted">
+                <b>Язык программирования</b>&nbsp;&mdash; это строго определенный набор правил, по&nbsp;которым
+                происходит взаимодействие человека с&nbsp;компьютером. Иначе говоря, это инструмент, позволяющий вам
+                управлять компьютером.
+            </p>
+            <p class="article__descr">
+                Все программы и&nbsp;операции, выполняемые компьютером,&nbsp;&mdash; результат следования инструкциям,
+                которые для него пишут люди.
+            </p>
+            <p class="article__descr">
+                Представьте, что общаетесь с&nbsp;иностранцем, который не&nbsp;знает вашего языка,
+                но&nbsp;вы&nbsp;его&nbsp;&mdash; знаете. Компьютер и&nbsp;есть наш &laquo;иностранец&raquo;.
+            </p>
+            <p class="article__descr">
+                Люди придумали много языков для общения с&nbsp;компьютером. Это было сделано для достижения различных
+                целей.
+            </p>
+            <p class="article__descr">
+                Иногда очень важна <strong>скорость работы программы</strong>, и&nbsp;тогда инструкцию компьютеру нужно
+                давать на&nbsp;максимально понятном для него языке, чтобы не&nbsp;тратить время на&nbsp;перевод. Иногда важнее, чтобы <strong>человек быстрее писал программы</strong>, и&nbsp;мы&nbsp;готовы уступить
+                в&nbsp;скорости выполнения программы в&nbsp;пользу скорости написания.
+            </p>
+            <p class="article__descr">
+                
+            </p>
+            <p class="article__descr">
+                По&nbsp;этому критерию языки программирования делятся на&nbsp;две категории: <b>высокоуровневые</b>
+                и&nbsp;<b>низкоуровневые</b>.
+            </p>
+            <div class="article__table table">
+                <div class="table__section table__section--right highlighted">
+                    <div class="table__wrapper">
+                        <h3 class="table__title">
+                            Низкоуровневые языки:
+                        </h3>
+                        <div class="table__descr">
+                            <ul class="table__list">
+                                <li class="table__item">
+                                    Созданы для удовлетворения нужд конкретной компьютерной архитектуры и&nbsp;учитывают
+                                    требования &laquo;железа&raquo;, поэтому скорость их&nbsp;работы, в&nbsp;отличие
+                                    от&nbsp;высокоуровневых, выше.
+                                </li>
+                                <li class="table__item">
+                                    Работать с&nbsp;ними достаточно тяжело, поэтому они применяются редко и&nbsp;только
+                                    для узкоспециализированных задач.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="table__example">
+                        Примеры: <span class="italic">Assembler, CIL</span>
+                    </div>
+                </div>
+                <div class="table__section table__section--left highlighted">
+                    <div class="table__wrapper">
+                        <h3 class="table__title">
+                            Высокоуровневые языки:
+                        </h3>
+                        <div class="table__descr">
+                            <ul class="table__list">
+                                <li class="table__item">
+                                    Созданы с&nbsp;расчётом на&nbsp;то, что их&nbsp;должны понимать люди
+                                    и&nbsp;с&nbsp;ними должно быть удобно работать.
+                                </li>
+                                <li class="table__item">
+                                    Они независимы: программистам не&nbsp;нужно в&nbsp;точности знать, на&nbsp;каком
+                                    именно оборудовании будет запускаться их&nbsp;программа.
+                                </li>
+                                <li class="table__item">
+                                    В&nbsp;случае с&nbsp;высокоуровневыми языками программирования скорость выполнения
+                                    программы компенсируется скоростью её&nbsp;написания.
+                                </li>
+                                <li class="table__item">
+                                    За&nbsp;удобство пользования приходится платить: программы, написанные
+                                    на&nbsp;высокоуровневых языках, требуют для своей работы и&nbsp;хранения значительно
+                                    больше памяти, чем написанные на&nbsp;низкоуровневых.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="table__example">
+                        Примеры: <span class="italic">Python, C++, Java, Kotlin, C#, JavaScript,
+                            PHP</span>
+                    </div>
+                </div>
+            </div>
+            <p class="article__descr">
+                Теперь разберемся, что означают термины <b>&laquo;интерпретируемый&raquo;</b>
+                и<b>&nbsp;&laquo;кроссплатформенный&raquo;</b> в&nbsp;определении языка Python. Эти понятия тесно
+                взаимосвязаны друг с&nbsp;другом.
+            </p>
+            <p class="article__descr">
+                Разработчики постоянно оперируют словами &laquo;компилятор&raquo;
+                и&nbsp;&laquo;интерпретатор&raquo;&nbsp;&mdash; вы&nbsp;можете встретить их&nbsp;упоминание
+                в&nbsp;документации, в&nbsp;книгах, в&nbsp;курсе и&nbsp;в&nbsp;общении с&nbsp;коллегами. Начинающим
+                разработчикам важно разобраться с&nbsp;тем, что за&nbsp;ними стоит, поскольку компиляция
+                и&nbsp;интерпретация являются одними из&nbsp;основных процессов в&nbsp;мире языков программирования.
+            </p>
+            <p class="article__descr">
+                Начнём погружение в&nbsp;эту тему с&nbsp;понятия, которое часто будет упоминаться при объяснении
+                механизмов работы трансляторов&nbsp;&mdash; <b>машинный код</b>...
+            </p>
+        </div>
+    </section>
+</body>
+
+</html>
